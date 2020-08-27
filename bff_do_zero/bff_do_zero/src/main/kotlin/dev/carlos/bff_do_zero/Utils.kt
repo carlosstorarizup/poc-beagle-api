@@ -15,14 +15,16 @@ class Utils {
                     Container(
                             children = listOf(
                                     Text(
-                                            text = "@{myContext.article[$x].title}"
+                                            text = "@{myContext.article[$x].title}",
+                                            styleId = "Title.Text.DarkGray"
                                     ).applyStyle(
                                             Style(
-                                                    padding = EdgeValue(all = 2.unitPercent())
+                                                    padding = EdgeValue(all = 4.unitPercent())
                                             )
                                     ),
                                     Text(
-                                            text = "@{myContext.article[$x].abstract}"
+                                            text = "@{myContext.article[$x].abstract}",
+                                            styleId = "Description.Text.Orange"
                                     ).applyStyle(
                                             Style(
                                                     padding = EdgeValue(all = 5.unitPercent())
@@ -31,7 +33,6 @@ class Utils {
                             )
                     ).applyStyle(
                             Style(
-                                    backgroundColor = "#f2f2f2",
                                     margin = EdgeValue(all = 2.unitPercent())
                             )
                     )
