@@ -40,4 +40,17 @@ class Utils {
         }
         return news
     }
+
+    fun makeArticleData() : List<Article> {
+        var articles = mutableListOf<Article>()
+        for (x in 0..5) {
+            articles.add(
+                    Article(
+                            title = "@{onSuccess.data.results[$x].title}",
+                            abstract = "@{onSuccess.data.results[$x].abstract}"
+                    )
+            )
+        }
+        return articles
+    }
 }

@@ -38,32 +38,7 @@ class MyBuilder : ScreenBuilder {
                                                             SetContext(
                                                                     contextId = "myContext",
                                                                     path = "article",
-                                                                    value = mutableListOf(
-                                                                            Article(
-                                                                                    title = "@{onSuccess.data.results[0].title}",
-                                                                                    abstract = "@{onSuccess.data.results[0].abstract}"
-                                                                            ),
-                                                                            Article(
-                                                                                    title = "@{onSuccess.data.results[1].title}",
-                                                                                    abstract = "@{onSuccess.data.results[1].abstract}"
-                                                                            ),
-                                                                            Article(
-                                                                                    title = "@{onSuccess.data.results[2].title}",
-                                                                                    abstract = "@{onSuccess.data.results[2].abstract}"
-                                                                            ),
-                                                                            Article(
-                                                                                    title = "@{onSuccess.data.results[3].title}",
-                                                                                    abstract = "@{onSuccess.data.results[3].abstract}"
-                                                                            ),
-                                                                            Article(
-                                                                                    title = "@{onSuccess.data.results[4].title}",
-                                                                                    abstract = "@{onSuccess.data.results[4].abstract}"
-                                                                            ),
-                                                                            Article(
-                                                                                    title = "@{onSuccess.data.results[5].title}",
-                                                                                    abstract = "@{onSuccess.data.results[5].abstract}"
-                                                                            )
-                                                                    )
+                                                                    value = Utils().makeArticleData()
                                                             )
                                                     )
                                             )
