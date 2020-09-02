@@ -10,7 +10,7 @@ class AppDesignSystem: DesignSystem()  {
     override fun textStyle(id: String): Int? {
         return when (id) {
             "Title.Text.DarkGray" -> R.style.Title_Text_DarkGray
-            "Description.Text.Orange" -> R.style.Description_Text_Orange
+            "Description.Text.LightGray" -> R.style.Description_Text_LightGray
             else -> R.style.Design_System_Text_Default
         }
     }

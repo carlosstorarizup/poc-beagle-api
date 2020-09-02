@@ -46,7 +46,6 @@ class MyBuilder : ScreenBuilder {
                             ),
                             ScrollView(
                                     scrollDirection = ScrollAxis.VERTICAL,
-                                    scrollBarEnabled = true,
                                     children = Utils().makeContainersList()
                             )
                     )

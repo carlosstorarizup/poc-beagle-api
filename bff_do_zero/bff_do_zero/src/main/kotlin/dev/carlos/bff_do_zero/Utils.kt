@@ -24,7 +24,7 @@ class Utils {
                                     ),
                                     Text(
                                             text = "@{myContext.article[$x].abstract}",
-                                            styleId = "Description.Text.Orange"
+                                            styleId = "Description.Text.LightGray"
                                     ).applyStyle(
                                             Style(
                                                     padding = EdgeValue(all = 5.unitPercent())
